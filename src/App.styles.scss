@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+:root {
+    --Logo_Height:86px;
+    --Main-Height:720px;
+    --Section-Sugestoes_Height:560px;
+    --Section-Contato_Height:333px;
+    --Footer-Height:60px;
+    --Layout-width:1280px;
+
+}
+
+body {
+    background-color: #FFE8E8;
+}
+
+
+.App {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  var(--Layout-width);
+     grid-template-rows:
+     var(--Logo_Height)
+     var(--Main-Height)
+     var(--Section-Sugestoes_Height)
+     var(--Section-Contato_Height)
+     var(--Footer-Height)
+     ;grid-template-areas:
+     "logo"
+     "Main"
+     "sugestoes"
+     "contato"
+     "footer"
+     ;
+
+     background: rgba(255, 255, 255, 0.9);
+}
+
+
+aside.logo {
+    grid-area: logo;
+}
+
+header.header {
+    grid-area: heade;
+}
+
+section.sugestoes {
+    grid-area: sugestoes;
+}
+
+
+section.contato {
+    grid-area: contato;
+}
+
+footer.footer {
+    grid-area: footer;
+
+}
