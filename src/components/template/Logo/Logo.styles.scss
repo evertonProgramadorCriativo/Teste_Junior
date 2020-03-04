@@ -1,0 +1,23 @@
+aside.logo {
+}
+
+
+  
+
+
+   
+.logo {
+    &_container {
+      position: absolute;
+      left: 619px;
+      top: 26px;
+    }
+  
+    &_svg {
+      height: 34px;
+      width: 148px;
+      position: absolute;
+   
+    }
+
+}

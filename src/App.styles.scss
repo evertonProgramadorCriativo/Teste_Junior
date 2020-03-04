@@ -1,8 +1,24 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+   
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    
+
+}
 
 
 :root {
@@ -22,24 +38,29 @@ body {
 
 .App {
     margin: 0 auto;
+    padding: 0;
     display: grid;
-    grid-template-columns:  var(--Layout-width);
+    grid-template-columns: var(--Layout-width);
      grid-template-rows:
      var(--Logo_Height)
      var(--Main-Height)
      var(--Section-Sugestoes_Height)
      var(--Section-Contato_Height)
-     var(--Footer-Height)
-     ;grid-template-areas:
+     var(--Footer-Height);
+     grid-template-areas:
      "logo"
      "Main"
      "sugestoes"
      "contato"
      "footer"
      ;
-
+     width: 1280px;
      background: rgba(255, 255, 255, 0.9);
+    
 }
+
+
+
 
 
 aside.logo {
