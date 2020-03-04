@@ -1,0 +1,129 @@
+.NavBar {
+  * {
+    text-decoration: none;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 41px;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+
+  
+
+  /*Esquerda*/
+
+  &_Left {
+    height: 36px;
+    width: 147px;
+    align-items: center;
+    display: flex;
+    margin-left: 55px;
+
+    &--Registro {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      line-height: 19.61px;
+      line-height: 120%;
+      align-items: center;
+      fill: Solid;
+      color: #686868;
+    }
+
+    &--Separador {
+      margin: 0 5px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      line-height: 19.61px;
+      line-height: 120%;
+      align-items: center;
+      fill: Solid;
+      color: #686868;
+    }
+  }
+
+  /*Center*/
+
+  &_Centro {
+    height: 36px;
+    width: 754px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--link {
+      font-family: "Gotham Book";
+      margin: 0 20px;
+      font-size: 14px;
+      fill: solid;
+      color: #686868;
+    }
+  }
+  /*Direita*/
+
+  &_Right {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+
+    &--Form {
+      flex: 0 0 40%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &--Icone {
+      height: 21px;
+      width: 21px;
+      fill: Solid;
+      color: #686868;
+      position: relative;
+      left: 21px;
+      top: -5px;
+    }
+
+    &--pesquisar {
+      font-family: "Open Sans";
+      font-size: 12px;
+      line-height: 19.61px;
+      line-height: 120%;
+      vertical-align: Center;
+      color: #686868;
+         text-align: right;
+         background: none;
+
+      border: none;
+      border-bottom: 1px solid rgba(104, 104, 104, 0.4);
+      outline: none;
+      text-align: center;
+      width: 83px;
+    }
+
+    &--cardShopping {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+
+      &-Icone {
+        height: 24px;
+        width: 27px;
+        fill: Solid;
+        color: #686868;
+      }
+
+      &-Quantidade {
+        font-family: "Gotham Book";
+        font-size: 12px;
+        align-items: center;
+        vertical-align: Center;
+        fill: Solid;
+        color: #686868;
+      }
+    }
+    }
+  }
+

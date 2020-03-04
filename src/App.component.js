@@ -18,13 +18,16 @@ class App extends Component {
     return (
       
       <div className="App">
-        <React.Fragment>
-        <Switch> 
-          <Route exact path='/' component={Logo} />
+          <Logo />
           <Header />
           <Sugestoes />
           <Contato />
           <Footer />
+
+
+        <React.Fragment>
+        <Switch> 
+          <Route exact path='/' component={Logo} />
           </Switch>
         </React.Fragment>
       </div>

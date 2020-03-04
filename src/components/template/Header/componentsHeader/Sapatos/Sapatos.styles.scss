@@ -1,0 +1,85 @@
+.sapatos{
+
+
+&_rotaAtual{
+
+
+    &--nome{
+
+    }
+
+    &--separador{
+        
+    }
+}
+
+
+&_Slider{
+
+
+    &--VerticalDots {
+        transform: rotate(90deg);
+        width: 400px;
+        height: 161px;
+
+
+    
+        &-box{
+            outline: none;
+            background: black;
+            color: white;
+            width: 90px;
+            height: 90px;
+            transform: rotate(270deg);
+        }
+
+        &-img{
+
+        }
+    }
+
+
+    &--MainBox {
+        &-box{
+         
+        }
+
+        &-img{
+            background: yellow;
+            width: 350px;
+            height: 250px;
+        }
+    }
+
+    &--BoxDetalhes {
+        &-box{
+
+        }
+
+        &-img{
+            background: green;
+            width: 350px;
+            height: 250px;
+        }
+    }
+
+
+    &--video {
+        &-box{
+           
+        }
+
+        &-img{
+            background: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+    }
+}
+
+}
+
+.boxDotsVideo {
+    display: block;
+}
