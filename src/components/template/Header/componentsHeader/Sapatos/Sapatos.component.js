@@ -1,7 +1,30 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-
 import './Sapatos.styles.scss';
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", left: "411px", top: "-41px" , position: "relative"  }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", left: "-32px", top: "72px" , position: "relative"   }}
+        onClick={onClick}
+      />
+    );
+  }
+
+
 
 export default class AsNavFor extends Component {
     constructor(props) {
@@ -20,7 +43,16 @@ export default class AsNavFor extends Component {
     }
 
     render() {
+        const settings = {
+            dots: false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            nextArrow: <SampleNextArrow />,
+            prevArrow: <SamplePrevArrow />
+          };
         return (
+            <React.Fragment>
             <nav className="sapatos">
                 <div className="sapatos_rotaAtual">
                     <span className="sapatos_rotaAtual--nome">Home</span>
@@ -29,7 +61,6 @@ export default class AsNavFor extends Component {
                 </div>
                 <div className="sapatos_Slider">
 
-                    <div className="boxDotsVideo">
                         <Slider className="sapatos_Slider--video"
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}
@@ -37,6 +68,7 @@ export default class AsNavFor extends Component {
                             swipeToSlide={true}
                             focusOnSelect={true}
                             arrows={false}
+                            
 
                         >
 
@@ -56,10 +88,11 @@ export default class AsNavFor extends Component {
                         <Slider className="sapatos_Slider--VerticalDots"
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}
-                            slidesToShow={3}
-                            swipeToSlide={true}
-                            focusOnSelect={true}
+                            slidesToShow={4}
+                            {...settings}
+                           
                         >
+
 
                             <div className="sapatos_Slider--VerticalDots-box">
                                 <h3 className="sapatos_Slider--VerticalDots-img">1</h3>
@@ -82,7 +115,8 @@ export default class AsNavFor extends Component {
 
                         </Slider>
 
-                    </div>
+                  
+                    
 
 
                     <Slider className="sapatos_Slider--MainBox"
@@ -160,6 +194,7 @@ export default class AsNavFor extends Component {
                 </div>
 
             </nav>
+            </React.Fragment>
         );
     }
 }

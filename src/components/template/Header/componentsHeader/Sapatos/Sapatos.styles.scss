@@ -1,5 +1,5 @@
 .sapatos{
-
+width: 1280px;
 
 &_rotaAtual{
 
@@ -15,12 +15,47 @@
 
 
 &_Slider{
+    
 
+
+    &--video {
+
+        
+        position: relative;
+        top: 32px;
+        margin: 0px;
+        height: 72px;
+        width: 151px;
+        background: red;
+
+        &-box{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 45px;
+        }
+
+        &-img{
+            outline: none;
+            background: black;
+            color: white;
+            width: 82px;
+            height: 45px;
+            
+        }
+
+    }
 
     &--VerticalDots {
+      
+
+
         transform: rotate(90deg);
-        width: 400px;
-        height: 161px;
+        width: 406px;
+        position: relative;
+        top: 156px;
+        right: 185px;
+        height: 261px;
 
 
     
@@ -28,9 +63,11 @@
             outline: none;
             background: black;
             color: white;
-            width: 90px;
-            height: 90px;
+            width: 82px;
+            height: 94.3px;
             transform: rotate(270deg);
+
+         
         }
 
         &-img{
@@ -40,46 +77,55 @@
 
 
     &--MainBox {
+        position: relative;
+        bottom: 305px;
+        left: 200px;
+        width: 500px;
+        height: 556px;
+        width: 430px;
+
+
         &-box{
          
         }
 
         &-img{
-            background: yellow;
-            width: 350px;
-            height: 250px;
+          
+
+     background: yellow;
+    height: 556px;
+    width: 430px;
         }
     }
 
     &--BoxDetalhes {
+
+        position: relative;
+        left: 700px;
+        width: 500px;
+        bottom: 857px;
+
+
+
         &-box{
 
         }
 
         &-img{
             background: green;
-            width: 350px;
-            height: 250px;
+            width: 444px;
+            height: 533px;
         }
     }
 
 
-    &--video {
-        &-box{
-           
-        }
-
-        &-img{
-            background: blue;
-            width: 100px;
-            height: 100px;
-        }
-
-    }
+   
 }
 
 }
 
-.boxDotsVideo {
-    display: block;
-}
+
+
+
+
+
